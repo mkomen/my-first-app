@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        MikesLabel.text = "She dreamed it would be funny"
+        
+        ErinsLabel.text = "to farm honey so we could"
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +25,16 @@ class ViewController: UIViewController {
     }
 
 
+    @IBOutlet weak var MikesLabel: UILabel!
+    
+    @IBOutlet weak var ErinsLabel: UILabel!
+    
+    var tapcount = 0
+    
+    @IBAction func moneybuttonpressed(_ sender: Any) {
+        
+        tapcount = tapcount + 1
+        if tapcount >= 5 { MikesLabel.text = "Finally" }
+        
 }
-
+}
