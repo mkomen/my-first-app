@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     @IBAction func moneybuttonpressed(_ sender: Any) {
         
         tapcount = tapcount + 1
-        if tapcount >= 5 { MikesLabel.text = "Finally" }
+        if tapcount >= 5 { MikesLabel.text = "you hit the button five times!" }
         
 }
 }
